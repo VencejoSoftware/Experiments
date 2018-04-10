@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/03/12 19:45:59.000.479,=C:\Users\drake\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/03/20 12:12:12.000.245,=C:\Users\drake\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/03/21 10:34:17.000.986,=C:\Users\drake\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/03/21 10:39:51.000.922,=C:\Users\drake\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/03/21 10:41:04.000.206,=C:\Users\drake\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/04/08 17:31:03.000.631,=C:\Users\drake\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/04/08 17:31:13.000.590,C:\Users\drake\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\develop\Tetris\Main.Form.dfm</Transaction>
+    <Transaction>2018/04/08 17:31:13.000.590,C:\Users\drake\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\develop\Tetris\Main.Form.pas</Transaction>
+    <Transaction>2018/04/08 17:31:18.000.513,C:\Users\drake\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\develop\Tetris\Tetris.dproj</Transaction>
+    <Transaction>2018/04/08 17:32:32.000.908,=C:\develop\Tetris\Unit1.pas</Transaction>
+    <Transaction>2018/04/08 17:32:48.000.839,C:\develop\Tetris\Unit1.pas=C:\develop\Tetris\grid\Grid.pas</Transaction>
+    <Transaction>2018/04/08 17:32:58.000.189,=C:\develop\Tetris\Unit1.pas</Transaction>
+    <Transaction>2018/04/08 17:33:03.000.915,C:\develop\Tetris\Unit1.pas=C:\develop\Tetris\grid\Map.pas</Transaction>
+    <Transaction>2018/04/08 17:35:52.000.079,=C:\develop\Tetris\Unit1.pas</Transaction>
+    <Transaction>2018/04/08 17:36:02.000.594,C:\develop\Tetris\Unit1.pas=C:\develop\Tetris\grid\Grid.Column.pas</Transaction>
+    <Transaction>2018/04/08 17:36:07.000.023,=C:\develop\Tetris\Unit1.pas</Transaction>
+    <Transaction>2018/04/08 17:36:15.000.948,C:\develop\Tetris\Unit1.pas=C:\develop\Tetris\grid\Grid.Row.pas</Transaction>
+    <Transaction>2018/04/08 17:43:52.000.707,C:\develop\Tetris\grid\Map.pas=C:\develop\Tetris\grid\Grid.Drawable.pas</Transaction>
+    <Transaction>2018/04/08 18:57:07.068,=C:\develop\Tetris\Unit1.pas</Transaction>
+    <Transaction>2018/04/08 18:57:18.599,C:\develop\Tetris\grid\Grid.Cell.pas=C:\develop\Tetris\Unit1.pas</Transaction>
+    <Transaction>2018/04/08 19:06:28.814,C:\develop\Tetris\grid\Grid.Drawable.Cell.pas=C:\develop\Tetris\grid\Grid.Cell.pas</Transaction>
+    <Transaction>2018/04/08 19:06:45.344,C:\develop\Tetris\grid\Grid.Cell.Drawable.pas=C:\develop\Tetris\grid\Grid.Drawable.Cell.pas</Transaction>
+    <Transaction>2018/04/08 21:03:39.854,=C:\develop\Tetris\Unit1.pas</Transaction>
+    <Transaction>2018/04/08 21:03:46.086,C:\develop\Tetris\grid\Grid.Cell.pas=C:\develop\Tetris\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

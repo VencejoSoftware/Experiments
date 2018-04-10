@@ -1,0 +1,25 @@
+AjpdSoft Tetris (Código fuente en Delphi 6 incluido)
+Versión 1.0.6.237 (11-10-2009)
+
+----------------------------
+¿PARA QUÉ SIRVE EL PROGRAMA?
+----------------------------
+
+Ejemplo de juego del Tetris desarrollado en el lenguaje de programación Borland Delphi 6. Guarda las tres primeras puntuaciones, muestra la pieza siguiente que aparecerá, tiene 9 niveles hasta alcanzar el final del juego y 9 niveles de dificultad. La aplicación muestra el número de líneas conseguidas, el número de puntos y el nivel actual.
+
+
+------------------------------------
+Responsabilidades y tipo de licencia
+------------------------------------
+
+AjpdSoft no se responsabiliza del uso que usted pueda dar a este programa. Este programa es de libre distribución y no tiene restricciones. El desarrollador no se responsabiliza de los daños que el mal uso de este programa pueda causar a su equipo o a sus datos. Este programa NO es para uso comercial.
+
+---------------
+Más información
+---------------
+
+Si desea obtener más información o enviarnos cualquier incidencia o sugerencia, por favor, regístrese en nuestra web (es gratuito): http://www.ajpdsoft.com y desde la sección "Incidencias de programas" podrá enviarnos la duda/sugerencia/incidencia de la aplicación.
+
+
+Todos los derechos de copia reservados, AjpdSoft 1995-2005
+www.ajpdsoft.com

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ActiveMobileDevice>
+		<PMiMac iOSSimulator="iPhone5"/>
+		<NoProfile Android="0123456789ABCDEF"/>
+	</ActiveMobileDevice>
+	<Transactions>
+    <Transaction>2016/08/02 15:53:55.000.800,C:\Mobile\Tetris\HeaderFooterApplication.dproj=C:\Mobile\Tetris\Tetris.dproj</Transaction>
+    <Transaction>2016/08/02 16:42:44.000.760,=C:\Mobile\Tetris\Unit1.pas</Transaction>
+    <Transaction>2016/08/02 16:43:10.000.439,C:\Mobile\Tetris\Unit1.pas=C:\Mobile\Tetris\Tetris.Artifacts.pas</Transaction>
+    <Transaction>2016/08/02 17:29:14.000.344,=C:\Mobile\Tetris\Unit1.pas</Transaction>
+    <Transaction>2016/08/02 17:29:27.000.247,C:\Mobile\Tetris\Unit1.pas=C:\Mobile\Tetris\Tetris.Pieces.pas</Transaction>
+  </Transactions>
+</BorlandProject>
