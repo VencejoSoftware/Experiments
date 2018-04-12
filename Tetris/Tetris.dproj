@@ -109,11 +109,15 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="grid\Grid.pas"/>
-        <DCCReference Include="grid\Grid.Drawable.pas"/>
+        <DCCReference Include="grid\Grid.Rect.Artist.pas"/>
         <DCCReference Include="grid\Grid.Column.pas"/>
         <DCCReference Include="grid\Grid.Row.pas"/>
-        <DCCReference Include="grid\Grid.Cell.Drawable.pas"/>
+        <DCCReference Include="grid\Grid.Style.pas"/>
         <DCCReference Include="grid\Grid.Cell.pas"/>
+        <DCCReference Include="draw\Draw.Pencil.pas"/>
+        <DCCReference Include="draw\Draw.Fill.pas"/>
+        <DCCReference Include="grid\Grid.Hexagon.Artist.pas"/>
+        <DCCReference Include="grid\Grid.Artist.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

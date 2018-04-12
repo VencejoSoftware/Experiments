@@ -3,15 +3,19 @@ unit Main.Form;
 interface
 
 uses
-  SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  Grid, Grid.Column, Grid.Row, Grid.Drawable;
+  SysUtils, Classes, Graphics, Controls, Forms, Dialogs, Types,
+  Grid, Grid.Column, Grid.Row,
+  Draw.Pencil, Draw.Fill,
+  Grid.Style, Grid.Artist, Grid.Rect.Artist, Grid.Hexagon.Artist;
 
 type
   TForm1 = class(TForm)
     procedure FormCreate(Sender: TObject);
     procedure FormPaint(Sender: TObject);
   private
-    _Grid: IGridDrawable;
+    _Grid: IGrid;
+    _GridStyle: IGridStyle;
+    _GridArtist: IGridArtist;
   end;
 
 var
@@ -23,18 +27,23 @@ implementation
 
 procedure TForm1.FormPaint(Sender: TObject);
 begin
-  _Grid.Draw(Canvas);
+  _GridArtist.DrawCells(Point(10, 10), Canvas);
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  _Grid := TGridDrawable.New(10, 10, clCream, clLtGray);
+  _Grid := TGrid.New;
   _Grid.Columns.Add(TColumn.New(100));
   _Grid.Columns.Add(TColumn.New(100));
   _Grid.Columns.Add(TColumn.New(100));
   _Grid.Rows.Add(TRow.New(100));
   _Grid.Rows.Add(TRow.New(100));
   _Grid.Rows.Add(TRow.New(100));
+  _Grid.Rows.Add(TRow.New(100));
+
+  _GridStyle := TGridStyle.New(TPencil.New(clRed, TPencilPattern.Solid, 1), TFill.New(clYellow, TFillKind.Solid));
+// _GridArtist := TGridRectArtist.New(_Grid, _GridStyle);
+  _GridArtist := TGridHexagonArtist.New(_Grid, _GridStyle);
 end;
 
 end.
