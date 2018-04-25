@@ -20,7 +20,10 @@ type
     class function New(const Width: Cardinal): IColumn;
   end;
 
-  TColumnList = class sealed(TList<IColumn>);
+  TColumnList = class sealed(TList<IColumn>)
+  public
+    function ColumnIndex(const Column: IColumn): Integer;
+  end;
 
 implementation
 
@@ -37,6 +40,26 @@ end;
 class function TColumn.New(const Width: Cardinal): IColumn;
 begin
   Result := TColumn.Create(Width);
+end;
+
+{ TColumnList }
+
+function TColumnList.ColumnIndex(const Column: IColumn): Integer;
+var
+  Item: IColumn;
+  Founded: Boolean;
+begin
+  Result := -1;
+  for Item in Self do
+  begin
+    Founded := Column = Item;
+    if Founded then
+      Break
+    else
+      Inc(Result);
+  end;
+  if not Founded then
+    Result := - 1;
 end;
 
 end.

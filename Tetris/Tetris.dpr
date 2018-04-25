@@ -12,7 +12,8 @@ uses
   Draw.Pencil in 'draw\Draw.Pencil.pas',
   Draw.Fill in 'draw\Draw.Fill.pas',
   Grid.Hexagon.Artist in 'grid\Grid.Hexagon.Artist.pas',
-  Grid.Artist in 'grid\Grid.Artist.pas';
+  Grid.Artist in 'grid\Grid.Artist.pas',
+  Grid.ColumnIndexed in 'grid\Grid.ColumnIndexed.pas';
 
 {$R *.res}
 

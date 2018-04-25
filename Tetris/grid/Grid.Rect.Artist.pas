@@ -4,7 +4,8 @@ interface
 
 uses
   Graphics, Types,
-  Grid.Column, Grid.Row, Grid,
+  Grid.Column, Grid.Row, Grid.Cell,
+  Grid,
   Grid.Style, Grid.Artist;
 
 type
@@ -16,8 +17,8 @@ type
 // function CalcHeight: Cardinal;
 // function CalcWidth: Cardinal;
   public
-    procedure DrawCell(const Offset: TPoint; const Canvas: TCanvas; const Column: IColumn; const Row: IRow);
-    procedure DrawCells(const Offset: TPoint; const Canvas: TCanvas);
+    procedure DrawCell(const Offset: TPoint; const Canvas: TCanvas; const Cell: ICell);
+    procedure Draw(const Offset: TPoint; const Canvas: TCanvas);
     constructor Create(const Grid: IGrid; const GridStyle: IGridStyle);
     class function New(const Grid: IGrid; const GridStyle: IGridStyle): IGridArtist;
   end;
@@ -42,11 +43,11 @@ implementation
 // Inc(Result, Column.Width);
 // end;
 
-procedure TGridRectArtist.DrawCell(const Offset: TPoint; const Canvas: TCanvas; const Column: IColumn; const Row: IRow);
+procedure TGridRectArtist.DrawCell(const Offset: TPoint; const Canvas: TCanvas; const Cell: ICell);
 var
   RectCell: TRect;
 begin
-  RectCell := Rect(Offset.X, Offset.Y, Offset.X + Column.Width, Offset.Y + Row.Height);
+  RectCell := Rect(Offset.X, Offset.Y, Offset.X + Cell.Column.Width, Offset.Y + Cell.Row.Height);
   _GridStyle.ClearPencil(Canvas);
   _GridStyle.ApplyFill(Canvas);
   Canvas.Rectangle(RectCell);
@@ -57,7 +58,7 @@ begin
   Canvas.Rectangle(RectCell);
 end;
 
-procedure TGridRectArtist.DrawCells(const Offset: TPoint; const Canvas: TCanvas);
+procedure TGridRectArtist.Draw(const Offset: TPoint; const Canvas: TCanvas);
 var
   Row: IRow;
   Column: IColumn;
@@ -69,7 +70,7 @@ begin
     CurrentOffset.X := Offset.X;
     for Column in _Grid.Columns do
     begin
-      DrawCell(CurrentOffset, Canvas, Column, Row);
+      DrawCell(CurrentOffset, Canvas, TCell.New(Column, Row));
       Inc(CurrentOffset.X, Column.Width);
     end;
     Inc(CurrentOffset.Y, Row.Height);

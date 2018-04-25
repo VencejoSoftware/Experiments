@@ -3,7 +3,6 @@ unit Grid.Cell;
 interface
 
 uses
-  Generics.Collections,
   Grid.Column, Grid.Row;
 
 type
@@ -24,9 +23,6 @@ type
     function Row: IRow;
     constructor Create(const Column: IColumn; const Row: IRow);
     class function New(const Column: IColumn; const Row: IRow): ICell;
-  end;
-
-  TCellList = class sealed(TList<ICell>)
   end;
 
 implementation
