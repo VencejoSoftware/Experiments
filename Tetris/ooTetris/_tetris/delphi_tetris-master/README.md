@@ -1,1 +1,0 @@
-Petit jeu Tetris fonctionnant en mode console et compilable à partir de Delphi 3 ou postérieur.
